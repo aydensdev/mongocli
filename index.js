@@ -10,6 +10,7 @@ function clearLine(){
 function consoleLog(value){
     process.stdout.write(value);
 }
+
 //load modules & variables
 consoleLog('Loading modules... [1/3]');
 const term = require('terminal-kit').terminal;
@@ -17,8 +18,11 @@ sameLine('Loading modules... [2/3]');
 const fs = require('fs');
 sameLine('Loading modules... [3/3]');
 const {MongoClient} = require('mongodb');
-const password = 'N43stRwzoTZhECSi'; 
-const mongoURI = `mongodb+srv://NodeDatabase:${password}@nodecluster.ixusm.mongodb.net/nodedatabase?retryWrites=true&w=majority`;
+
+// REPLACE WITH GIVEN INFO ON MONGO WEBSITE
+const password = "PASSWORD"; 
+const mongoURI = "URI";
+
 const client = new MongoClient(mongoURI, {useNewUrlParser:true, useUnifiedTopology:true});
 clearLine();
 //start screen
