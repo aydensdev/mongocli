@@ -1,0 +1,15 @@
+{
+  "name": "nodedatabase",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo OK"
+  },
+  "author": "Ayden",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^4.0.1",
+    "terminal-kit": "^2.1.6"
+  }
+}
